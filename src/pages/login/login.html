@@ -1,0 +1,38 @@
+<ion-header>
+  
+   <ion-navbar>
+      <ion-title>Login</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-list>
+
+        Please log in with your registered email address and password.
+          
+            <ion-item>
+              <ion-label floating>Username</ion-label>
+              <ion-input type="text" #username></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label floating>Password</ion-label>
+              <ion-input type="password" #password></ion-input>
+            </ion-item>
+          
+          </ion-list>
+          
+          <div padding>
+            <button block ion-button (click)="signInUser()">Sign In</button>
+          </div>
+
+          <ion-footer>
+            <ion-toolbar>
+              <ion-title> Made by Angelika Pappinen (1500967) </ion-title>
+            </ion-toolbar>
+          </ion-footer>
+  
+  </ion-content>
+  

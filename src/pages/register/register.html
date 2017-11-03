@@ -1,0 +1,39 @@
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>Create account</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <!--Angelika Pappinen-->
+  
+  <ion-content padding>
+      <ion-list>
+
+        Please register with email and password.
+          
+            <ion-item>
+              <ion-label floating>Username</ion-label>
+              <ion-input type="text" #username></ion-input>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label floating>Password</ion-label>
+              <ion-input type="password" #password></ion-input>
+            </ion-item>
+          
+          </ion-list>
+          
+          <div padding>
+            <button block ion-button (click)="registerUser()"> register </button>
+          </div>
+
+          <ion-footer>
+            <ion-toolbar>
+              <ion-title>Made by Angelika Pappinen (1500967)</ion-title>
+            </ion-toolbar>
+          </ion-footer>
+  
+  </ion-content>
+  
