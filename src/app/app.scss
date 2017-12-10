@@ -14,3 +14,27 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+//This command defines font for the app: Angelika Pappinen 1500967
+@font-face {
+    font-family: Open-sans;
+    src: url('../assets/fonts/Open-sans.woff2') format('woff2');
+
+}
+
+//This command apply font for the whole app (Globally) Angelika Pappinen 1500967
+*{
+    font-family: Open-sans;
+}
+
+//This command defines font dor the app
+@font-face{
+    font-family: BalooBhai;
+    src: url('../assets/fonts/BalooBhai,woff2') format("woff2");
+}
+
+//This command apply font for the whole app (Globally)
+*{
+    font-family: BalooBhai;
+}

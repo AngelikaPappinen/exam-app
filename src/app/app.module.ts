@@ -10,9 +10,9 @@ import { HttpModule } from '@angular/http'; //new imports
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FirebaseProvider } from '../providers/firebase/firebase';
 
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-//Add new imports here, here should be all your new pages. Angelika Pappinen
 import { AboutPage } from '../pages/about/about';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { EducationPage } from '../pages/education/education';
@@ -20,10 +20,11 @@ import { ExperiencePage } from '../pages/experience/experience';
 import { HobbiesPage } from '../pages/hobbies/hobbies';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
-import { TabsPage } from '../pages/tabs/tabs'; //add freshly made pages
+import { TabsPage } from '../pages/tabs/tabs'; 
 import { LoggedinPage } from '../pages/loggedin/loggedin';
+import { TechnicalPage } from '../pages/technical/technical'; //add freshly made pages Angelika Pappinen 1500967
+import { SoftPage } from '../pages/soft/soft'; //add freshly made pages Angelika Pappinen 1500967
 
-//copy this from firebase, create new app project.
 const firebaseConfig = {
   apiKey: "AIzaSyCEpTLvrxn43a2S-mFhWFO7KBXfQEfBJEY",
   authDomain: "examapp-645ed.firebaseapp.com",
@@ -33,7 +34,6 @@ const firebaseConfig = {
   messagingSenderId: "785266063623"
 };
 
-//add imports to declarations and bootstrap! Angelika Pappinen
 @NgModule({
   declarations: [
     MyApp,
@@ -46,8 +46,10 @@ const firebaseConfig = {
     TabsPage,
     HobbiesPage,
     LoginPage,
-    RegisterPage
-
+    RegisterPage,
+    TechnicalPage, 
+    SoftPage
+//Make sure that new pages are added to declarations and bootstrap! Angelika Pappinen
   ],
   imports: [
     BrowserModule,
@@ -70,12 +72,14 @@ const firebaseConfig = {
     HobbiesPage,
     TabsPage, //remember to add also to declarations
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    TechnicalPage,
+    SoftPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {provide: ErrorHandler, useClass: IonicErrorHandler },
     FirebaseProvider,
     AngularFireAuth
   ]

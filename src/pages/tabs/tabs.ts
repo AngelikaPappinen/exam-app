@@ -7,6 +7,8 @@ import { ExperiencePage } from '../experience/experience';
 import { ContactsPage } from '../contacts/contacts';
 import { EducationPage } from '../education/education';
 import { HobbiesPage } from '../hobbies/hobbies';
+import { TechnicalPage } from '../technical/technical';
+import { SoftPage } from '../soft/soft';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -18,6 +20,8 @@ export class TabsPage {
   tab3Root = ContactsPage;
   tab4Root = EducationPage;
   tab5Root = HobbiesPage;
+  tab6Root = TechnicalPage;
+  tab7Root = SoftPage;
 
   constructor() {
 

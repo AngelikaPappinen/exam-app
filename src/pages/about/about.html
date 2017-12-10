@@ -1,13 +1,19 @@
-<ion-header>
-  
+<ion-header no-border>
     <ion-navbar>
-      <ion-title>Home</ion-title>
+      <button ion-button menuToggle right>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Menu</ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="doClick()">
+          <ion-icon name="more"></ion-icon>
+        </button>
+      </ion-buttons>
     </ion-navbar>
-  
   </ion-header>
   
   
-  <ion-content padding>
+  <ion-content padding> 
   
     This is app, where you can find information about me, if you are seeking for employee
     <br><br><br>
@@ -28,6 +34,8 @@
             <ion-title> App made by Angelika Pappinen (1500967)</ion-title>
           </ion-toolbar>
         </ion-footer>
+
+
   
 <!-- I wanted to keep ion-footer separate from content, 
   so when I'm moving the screen "app made..." will not hide content-->
